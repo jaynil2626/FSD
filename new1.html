@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{display:flex;justify-content:center}
+        .text{ visibility: hidden;
+            width: 520px;
+            height: 520px; 
+            background-color:white; 
+            color: white; 
+            text-align: center;
+        transition-delay: 200ms;
+    transition-duration: 1000ms;}
+        .tooltip:hover .text{visibility: visible;background-color:brown;color:orange;}
+    </style>
+</head>
+<body>
+    <div class="tooltip">Hover over me :) <span class="text">Hello World....</span></div>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{--col:blue; --bool:lightgray}
+        h1{--col:purple; color:var(--col)}
+        p{color:var(--col); background-color: var(--bool)}
+    </style>
+</head>
+<body>
+    <h1>Example clash of global vs local</h1>
+    <p>var() should insert to custom value</p>
+</body>
+</html>

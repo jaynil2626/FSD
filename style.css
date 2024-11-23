@@ -1,0 +1,6 @@
+.body{margin:100px}
+.parent{border: 1px solid red; margin:auto; text-align: center; width:500px}
+.c1{background-color: powderblue ;border-radius: 10%; width:100px; height:100px; margin:20px; position: static; }
+.c2{background-color: royalblue ;border-radius: 10%; width:100px; height:100px; margin:20px; position: fixed;left:50px; top:50px}
+.c3{background-color: aquamarine ;border-radius: 10%; width:100px; height:100px; margin:20px; position: absolute; top:50px; left:50px}
+.c4{background-color: cyan ;border-radius: 10%; width:100px; height:100px; margin:20px; position: relative;top:50px; left:50px}
