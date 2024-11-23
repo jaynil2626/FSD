@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
+    <title>Document</title>
+    <style>
+        .hi{display: inline-block;}
+       .hi a{text-decoration: none;
+                    border:1px solid tomato;
+                    background-color: aquamarine;
+                    color: black;
+                    transition-duration: 400ms;
+                    padding: 10px;}
+        a:hover:not(.active) {background-color:cadetblue;font-size: 14px;}
+        a.active {background-color: cornflowerblue;}
+        .task2{background-color: aquamarine;}
+        .task3{background-color: orange;margin: 5%;width: 1000px; height:50px}
+        
+        @media only screen and (max-width:600px)
+        {
+            .div1{opacity:0}
+            .task2{background-color: blanchedalmond;}
+            .task3{display: block; height:400px; width:100px;}
+            a{display: block; margin:10px}
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: tomato; width:1000px; height:70px" class="div1">
+        <h1>Hide Elements on diffenent screen size</h1>
+    </div>
+    <br>
+    <br>
+    <div class="task2">
+        <h1>Resize the browser window to see the effect!</h1>
+        <p>Use mediaqueries to set the background-color to lavender if the viewport is 800 pixels wide or wider, to lightgreen if the viewport is between 400 and 799 pixels wide. If the viewport is smaller than 400 pixels, the background-color is lightblue.</p>
+    </div>
+    <br>
+    <br>
+    <div class="task3">
+        <div class="hi" style="margin: 2% 5% 5% 2%;">
+            <a href="#">&laquo; prev</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;next</a>
+        </div>
+    </div>
+</body>
+</html>
+write a html/css code that shows a menu that will float to the right of the page if viewport is 380 px wide or widder if viewport is less than 380px then menu will be on top of the content 
