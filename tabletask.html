@@ -1,0 +1,45 @@
+<!-- write down html and css script to design one table having 3 columns and 5 rows add random data while hovering it should be expanded around 50% horizontally background color and font color will become red and white respectively expansion should take place in 2 seconds  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{height:200px; width:400px; margin:10%}
+        tr{transition-property: transform; transition-duration: 2s;}
+        tr:hover{transform:scaleX(1.5); background-color: tomato; color:whitesmoke}
+    </style>
+</head>
+<body>
+    <table style="border: 1px solid black;" rules="all">
+        <tr>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+
+    </table>
+</body>
+</html>
