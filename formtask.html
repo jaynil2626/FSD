@@ -1,0 +1,42 @@
+<!-- write html and css script to design sign up form having fields like user name and password, choice of sports cricket hockey badminton and tennis also include gender field submit and reset button follow the below requirments 1) while hovering username and password background should turn in yellow and pink respectively 2) while clicking sports and gender field text should turn into red color 3) both submit and rese button text should turn blue while hovering use appropriate selectors for task  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        input[type="text"]:hover{background-color: rgb(255, 255, 193)}
+        input[type="password"]:hover{background-color: rgb(252, 197, 206)}
+        .cric:active{color: red}
+        .hoc:active{color:red}
+        .bad:active{color:red}
+        .ten:active{color:red}
+        .male:active{color:red}
+        .female:active{color:red}
+        input[type="submit"]:hover{color: blue}
+        input[type="reset"]:hover{color: blue}
+
+    </style>
+ </head>
+ <body>
+    <fieldset>
+        <legend>Sign up</legend>
+        <form>
+        <pre>
+        User Name: <input type="text" name="user_name"> 
+
+        Password: <input type="password" name="password">
+
+        Sports: <span class="cric"><input type="checkbox" name="cricket"> Cricket</span>  <span class="hoc"><input type="checkbox" name="hockey">Hockey</span>  <span class="bad"><input type="checkbox" name="badminton">Badminton</span>  <span class="ten"><input type="checkbox" name="tennis">Tennis</span>
+
+        Gender: <span class="male"><input type="radio" name="gender" value="male">Male</span> <span class="female"><input type="radio" name="gender" value="Female">Female</span>
+
+
+        <input type="submit">  <input type="reset">
+                
+        </pre>
+    </form>
+    </fieldset>
+ </body>
+ </html>
