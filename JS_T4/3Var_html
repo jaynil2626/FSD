@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a=10
-        var b=15
-        const c=a+b
-        function a()
-        {
-            var x=10
-            document.write("a")
-            document.write(x)
-        }
-        a()
+        var a=10
+        var b=20
+        document.write("This is redeclaring variable"+ a)
+        var b=30
+        b=20
+        document.write("updating variable="+b)
     </script>
 </head>
 <body>
-    <input type="button" onClick="a()" value="hi">
+    <p>hello</p>
 </body>
 </html>
