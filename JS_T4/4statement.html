@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!-- type = object and use of key value pair -->
+        var data={fname:"Jaynil", lname:"Patel", age:"19"}
+        document.write(data.fname)
+        document.write("<br>Hello " + data.fname +" "+ data.lname)
+        document.write("<br> Welcome to The page <br>")
+        document.write(typeof(data))
+    </script>
+
+    <script>
+        <!-- type= array -->
+        var fruits = ["Apple","Kivi","dragonfruit","orange"]
+        document.write("<br>")
+        document.write(fruits.length+"<br>")
+        document.write(fruits[2]+"<br>")
+
+        for(i=0; i<fruits.length; i++)
+        {
+            document.write(fruits[i]+"<br>")
+        }
+    </script>
+
+    <script>
+        document.write(12+6+"ABC <br>")
+        document.write("ABC"+20+2)
+    </script>
+</body>
+</html>
