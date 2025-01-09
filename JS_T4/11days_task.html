@@ -1,0 +1,29 @@
+<!-- write a js class to calculate days remainig for your upcoming birthday in current year -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function day(d1,d2)
+        {
+            oneday= 24*60*60*1000
+            d1ms=d1.getTime()
+            d2ms=d2.getTime()
+            ddif= Math.abs(d1ms-d2ms)
+            return (Math.round(ddif/oneday))
+        }
+
+        var sd1=new Date()
+        sd1.setDate(26)
+        sd1.setMonth(1)
+        sd1.setYear(2006)
+        var sd2=new Date()
+        document.write("No. of days left for celebration: " + day(sd1,sd2))
+    </script>
+</body>
+</html>
