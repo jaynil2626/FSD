@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function warn()     
+        {       
+            alert("this is a warning message");     
+            document.write("Warning!!!!");	//It will be printed after closing alert box.//     
+        }  
+    </script>
+        
+    <input type="button" value="ok" onclick="warn()"/>
+
+    <script type="text/javascript">
+        
+        function conf()     
+        {  
+        ret = confirm("Do you want to continue?");              
+        if(ret==true)       
+        {      
+            document.write("user wants");                      	     
+            return true;    
+        }    
+        else   
+        {   
+            document.write("user does not want");  
+            return false; 
+        } 
+        }     
+    </script>
+    <input type="button" onclick="conf()" value="OK"/>
+
+    <script type="text/javascript">
+
+        function getval()      
+        {       
+            var ret = prompt("Enter your name: ", "Your name here");      
+            document.write("you entered "+ret);      
+        }    
+    </script>
+    <input type="button" onclick="getval()" value="OK"/>
+    
+</body>
+</html>
