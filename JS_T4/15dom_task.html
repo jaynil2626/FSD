@@ -1,0 +1,39 @@
+<!-- write a js task to change text, colour, and background colour on click using tag name method -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ischanged=false
+        function clk()
+        { 
+            a = document.getElementsByClassName("mine")
+            for(i=0; i<a.length; i++)
+            {
+                if(ischanged)
+                {
+                    a[i].innerHTML="P tag"
+                    a[i].style.color=""
+                    a[i].style.backgroundColor=""
+                }
+                else
+                {
+                    a[i].innerHTML="changed"
+                    a[i].style.color="tomato"
+                    a[i].style.backgroundColor="cyan"
+                }
+            }
+            ischanged = !ischanged
+        }
+    </script>
+ </head>
+ <body>
+    <p class="mine" >Hello</p>
+    <p>hii</p>
+    <p class="mine" >Jaynil</p>
+    <input type="button" value="Click me...." onClick="clk()">
+ </body>
+ </html>
+ 

@@ -7,11 +7,34 @@
     <title>Document</title>
  </head>
  <body>
-    <p id="demo">hii</p>
-    <p>I am fig</p>
-    <script>
-        document.getElementById("demo").innerHTML="How r u ?"
-        document.getElementById("demo").style.backgroundColor="Tomato"    
-    </script>
+    <div> <!-- get element by id -->
+      <p id="demo">hii</p>
+      <p>I am fig</p>
+      <script>
+         document.getElementById("demo").innerHTML="How r u ?"
+         document.getElementById("demo").style.backgroundColor="Tomato"   
+      </script>
+    </div>
+      
+    <!-- <div>
+      <p id="demo">hii</p>
+      <p>I am fig</p>
+      <script>
+         a= document.getElementsByTagName("P")
+         a[1].innerHTML = "welcome"
+      </script>
+    </div> -->
+
+    <!-- <div>
+      <p id="demo">hii</p>
+      <p>I am fig</p>
+      <script>
+         for(i=0; i<a.length; i++)
+         {
+            a[i].innerHTML = "Welcome"
+         }
+      </script>
+    </div> -->
+
  </body>
  </html>

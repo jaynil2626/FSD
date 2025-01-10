@@ -1,0 +1,27 @@
+<!-- write a js script which convert uppercase and lower case from written text onclick -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function upper()
+        {
+            a=document.getElementsByTagName("P")
+            a[0].style.textTransform = "upperCase"
+        }
+
+        function lower()
+        {
+            b=document.getElementsByTagName("P")
+            b[0].style.textTransform = "lowerCase"
+        }
+    </script>
+ </head>
+ <body>
+    <p>hello mates, i am jaynil</p>
+    <input type="button" value="Upper" onClick="upper()">
+    <input type="button" value="Lower" onClick="lower()">
+ </body>
+ </html>
