@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            pat=/paresh/
+            u=document.getElementById("t1").value
+            if(pat.test(u)){
+                alert("Allowed, value is: "+u)
+            }
+            else{
+                alert("not Allowed ")
+            }
+        }
+        </script>
+        
+</head>
+<body>
+    <form>
+            <input type="text" id="t1">
+            <input type="submit" onclick="fun()">
+        </form>
+</body>
+</html>
