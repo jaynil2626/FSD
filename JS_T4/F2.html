@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id){
+            id.bgColor="blue"
+        }
+        function fun1(e){
+            alert(e.keycode)
+        }
+        function fun2(id){
+            id.bgColor="red"
+        }
+        </script>
+</head>
+<body 
+    onkeyup="fun(this)"
+    onkeydown="fun2(this)"></body>
+</html>
