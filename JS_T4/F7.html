@@ -1,0 +1,26 @@
+<!-- write a js code to fatch the username or password from the form having name f1 and print in a dome -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            obj=document.forms["f1"]
+            obj1=document.f1.t1.value
+            obj2=document.f1.t2.value
+            document.write(obj1+obj2)
+            alert("form length "+obj.length)
+        }
+        </script>
+</head>
+<body>
+    <form onsubmit="fun()" name="f1">
+        <input type="text" name="t1" placeholder="Username">
+        <input type="password" name="t2" placeholder="password">
+        <input type="submit">
+        <input type="reset">
+</body>
+</html>
