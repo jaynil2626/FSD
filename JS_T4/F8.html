@@ -1,0 +1,23 @@
+<!-- write a js code to show alert with massage enter something if input field is empty on clicking submit button  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            obj1=document.f1.t1.value
+            if(obj1==0){
+                alert("Enter something")
+            }
+        }
+        </script>
+ </head>
+ <body>
+    <form onsubmit="fun()" name="f1">
+        <input type="text" name="t1" placeholder="Username">
+        <input type="submit">
+        </form>
+ </body>
+ </html>
