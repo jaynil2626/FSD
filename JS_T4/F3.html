@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(id){
+            id.bgcolor="blue"
+        }
+        function fun1(e){
+            alert(e.keyCode +"keypressed: "+ e.key)
+        }
+        function fun2(id){
+            id.bgcolor="blue"
+        }
+        
+    
+        </script>
+
+
+</head>
+<body 
+    onkeyup="fun(this)"
+    onkeydown="fun2(this)"
+    onkeypress="fun1(event)">
+</body>
+
+</html>
