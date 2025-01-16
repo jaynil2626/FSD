@@ -1,0 +1,22 @@
+<!-- write a js code for the following the event . give the key code for the key press 
+script shoud give massage along with key code wovel is presssed on pressing -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(e){
+            if(e.key="A"||e.key=="a"||e.key=="E"||e.key=="e"||e.key=="I"||e.key=="i"||e.key=="O"||e.key=="o"||e.key=="U"||e.key=="u"){
+                alert(e.keyCode + "vowel pressed : "+e.key)
+            }
+            else{
+                alert(e.key)
+            }
+        }
+        </script>
+</head>
+<body onkeyup="fun(event)">    
+</body>
+</html>
