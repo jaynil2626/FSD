@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fun()
+        {
+        const num1 = [23,55,21,87,56];
+    
+        const num2=[15,16,18,99]
+    
+            const fnum=[...num1,...num2] //Replace concat
+    
+    let maxValue = Math.max(...fnum);
+    
+        console.log(fnum) //shows array
+    
+        console.log(...fnum) //shows value
+    
+    document.getElementById("demo").innerHTML = "max value from "+num1+" and "+num2+" is "+maxValue;
+        }
+        </script>
+
+        <p onClick="fun()">Max value</p>
+        <p id="demo"> </p>
+</body>
+</html>

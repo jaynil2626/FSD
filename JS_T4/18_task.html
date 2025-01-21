@@ -1,0 +1,39 @@
+<!-- write a ES6 function to be called on button click take one div with some text without any decoration initially, take 50px font size and itallic style as default argument and pass the background color and text color at the time of function call on click -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        fun = (bg, tx, size = 100, style = "sans serif") => {
+            i = document.getElementById("d1");
+            i.style.color = tx;
+            i.style.fontStyle = style;
+            i.style.backgroundColor = bg;
+            i.style.fontSize = size;
+        }
+
+        fun2 = (bg, tx, size = 50, style = "italic") => {
+            j = document.getElementById("d1");
+            j.style.color = tx;
+            j.style.backgroundColor = bg;
+            j.style.fontSize = size;
+            j.style.fontStyle = style;
+        } 
+    </script>
+    <div id="d1">
+        Spread Happiness
+    </div>
+    <p id="p1">PARA 1</p>
+    <input type="submit" onclick="fun('cyan','blue')" value="CLICK HERE">
+    <input type="submit" onclick="fun('white','black')" value="Reset">
+
+
+</body>
+
+</html>
