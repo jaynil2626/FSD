@@ -1,0 +1,31 @@
+<!-- write a es6 script to calculate distance between two points, take two point object consisting of X , Y ,Z members, first object should be used to call distance function and second object should be passed inside an argument -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class dist {
+            constructor(x,y,z) {
+                this.x=x
+                this.y=y
+                this.z=z
+            }
+
+            distance = (P) =>{
+                let ans = Math.pow((this.x-P.x),2) + Math.pow((this.y-P.y),2) + Math.pow((this.z-P.z),2);
+                let d=Math.sqrt(ans)
+                return d
+            }
+        }
+        let obj1 = new dist(10,45,80)
+        let obj2 = new dist(90,76,56)
+
+        console.log(`distance = ${obj1.distance(obj2)}`)
+    </script>
+</body>
+</html>
