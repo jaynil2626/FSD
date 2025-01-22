@@ -1,0 +1,40 @@
+<!-- Create a form with a text input field and a submit button. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function trig() {
+            b = document.getElementById('inp');
+
+            a = document.getElementById("hello");
+            a.innerHTML = b.value;
+        }
+
+        function inp() {
+            b = document.getElementById('form');
+            b.style.backgroundColor = 'red';
+        }
+    </script>
+
+    <form action="" id="form">
+        <fieldset>
+            <legend>Form</legend>
+            <pre>
+                Input:  <input type="text" id="inp" oninput="inp()">
+
+                        <input type="button" onClick="trig()" value="submit"></button>
+                        <h1 id="hello">This is default text</h1>
+                    </pre>
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
